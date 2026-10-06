@@ -1,0 +1,34 @@
+name: live-source
+
+# Re-validates G1/G3/G4/G5/G6 against the real BME corpus.
+# Downloads the official PDFs, checks SHA-256 and runs the real gates.
+# Documents are never stored as artifacts — the repo does not redistribute
+# source PDFs. Manual trigger or weekly; also acts as a canary for
+# source-URL mutation.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * 1"   # Mondays 06:00 UTC
+
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update && sudo apt-get install -y tesseract-ocr
+      - run: pip install -e .[dev]
+      - run: venue-rule-diff fetch
+      - name: hash check
+        run: |
+          python - <<'EOF'
+          from venue_rule_diff.download import load_manifest, verify_local
+          m = load_manifest()
+          bad = [v["version"] for v in m["versions"] if not verify_local(v)]
+          assert not bad, f"sha256 mismatch for {bad}"
+          print("all sha256 match manifest")
+          EOF
+      - run: pytest -q tests/test_gates.py

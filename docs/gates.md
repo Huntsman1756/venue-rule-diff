@@ -55,3 +55,16 @@ two levels of truth, no suppression.
 **G6 — determinism.** Repeated extraction and diff of identical bytes must
 produce identical normalized content and identical diff output — under the
 declared toolchain (see [provenance](provenance.md)).
+
+## CI caveat
+
+The default `ci` workflow runs `pytest`, but the gate tests
+**skip when `data/raw/` is absent** — which is always the case in the
+public CI, since the repository does not redistribute the PDFs. CI green
+therefore means parser/fixtures/code pass, not that G1/G3/G4/G5 re-ran
+against the real corpus.
+
+`.github/workflows/live-source.yml` closes the gap: a manual or weekly job
+downloads the official PDFs from BME, verifies SHA-256 against the manifest
+and runs the real gates — without storing the documents as artifacts. It
+also doubles as a canary for source-URL mutation.
