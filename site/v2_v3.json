@@ -1,0 +1,2362 @@
+{
+  "rulebook": "bme_mtf_equity",
+  "from_version": "2",
+  "to_version": "3",
+  "source_hashes": {
+    "from": "a24b65c467cc3f96c3e248e82e2633aab4751eff5c25f2e37b1f26143200061c",
+    "to": "a0041368fcdb689269060eac841ccdc727bd7a8b17d43c9e43c31b410931b21b"
+  },
+  "changed_articles": [
+    1,
+    4,
+    5,
+    6,
+    7,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    24,
+    25,
+    26,
+    29,
+    31,
+    32,
+    35,
+    36,
+    37,
+    40
+  ],
+  "final_provision_changed": true,
+  "global_change_events": [
+    {
+      "del": [
+        "del",
+        "Mercado"
+      ],
+      "ins": [
+        "de",
+        "los",
+        "Mercados"
+      ],
+      "articles": [
+        "FINAL"
+      ]
+    },
+    {
+      "del": [],
+      "ins": [
+        "y",
+        "de",
+        "los",
+        "Servicios",
+        "de",
+        "Inversión"
+      ],
+      "articles": [
+        "FINAL"
+      ]
+    },
+    {
+      "del": [],
+      "ins": [
+        ","
+      ],
+      "articles": [
+        "FINAL"
+      ]
+    },
+    {
+      "del": [
+        "este",
+        "segmento"
+      ],
+      "ins": [
+        "estos",
+        "segmentos"
+      ],
+      "articles": [
+        "FINAL"
+      ]
+    },
+    {
+      "del": [],
+      "ins": [
+        "o",
+        "la",
+        "Unión",
+        "Europea"
+      ],
+      "articles": [
+        "FINAL"
+      ]
+    }
+  ],
+  "changes": [
+    {
+      "article": 1,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "el",
+            "texto",
+            "refundido"
+          ],
+          "ins": [
+            "la",
+            "ley",
+            "6",
+            "/",
+            "2023",
+            ","
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "la",
+            "Ley",
+            "del",
+            "Mercado"
+          ],
+          "ins": [
+            "17",
+            "de",
+            "marzo",
+            ",",
+            "de",
+            "los",
+            "Mercados"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            ",",
+            "aprobado",
+            "por",
+            "Real",
+            "Decreto",
+            "Legislativo",
+            "4",
+            "/",
+            "2015",
+            ","
+          ],
+          "ins": [
+            "y"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "23"
+          ],
+          "ins": [
+            "los",
+            "Servicios"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "octubre"
+          ],
+          "ins": [
+            "Inversión"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "del",
+            "Mercado"
+          ],
+          "ins": [
+            "de",
+            "los",
+            "Mercados"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "y",
+            "de",
+            "los",
+            "Servicios",
+            "de",
+            "Inversión"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            ","
+          ]
+        },
+        {
+          "op": "delete",
+          "del": [
+            ",",
+            "el",
+            "Título",
+            "II",
+            "del",
+            "Real",
+            "Decreto",
+            "-",
+            "ley",
+            "21",
+            "/",
+            "2017",
+            ",",
+            "de",
+            "29",
+            "de",
+            "diciembre",
+            ",",
+            "de",
+            "medidas",
+            "urgentes",
+            "para",
+            "la",
+            "adaptación",
+            "del",
+            "derecho",
+            "español",
+            "a",
+            "la",
+            "normativa",
+            "la",
+            "Unión",
+            "Europea",
+            "en",
+            "materia",
+            "del",
+            "mercado",
+            "de",
+            "valores",
+            ","
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "45",
+            "del",
+            "aludido",
+            "Real",
+            "Decreto",
+            "-",
+            "ley",
+            "21",
+            "/",
+            "2017"
+          ],
+          "ins": [
+            "76",
+            "de",
+            "la",
+            "Ley",
+            "de",
+            "los",
+            "Mercados",
+            "de",
+            "Valores",
+            "y",
+            "de",
+            "los",
+            "Servicios",
+            "de",
+            "Inversión",
+            "y",
+            "demás",
+            "normativa",
+            "aplicable"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "así",
+            "como"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "29"
+          ],
+          "ins": [
+            "otro",
+            "segmento"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "diciembre"
+          ],
+          "ins": [
+            "negociación",
+            "(",
+            "BME",
+            "Scale",
+            ")",
+            "dirigido",
+            "a",
+            "PYMEs",
+            "en",
+            "una",
+            "fase",
+            "de",
+            "desarrollo",
+            "temprano",
+            "y",
+            "a",
+            "otras",
+            "empresas",
+            "que",
+            "busquen",
+            "financiación",
+            "en",
+            "el",
+            "mercado",
+            "de",
+            "valores"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "este",
+            "segmento"
+          ],
+          "ins": [
+            "estos",
+            "segmentos"
+          ]
+        }
+      ],
+      "global_changes": [
+        "del Mercado -> de los Mercados",
+        " -> y de los Servicios de Inversión",
+        " -> ,",
+        "este segmento -> estos segmentos"
+      ]
+    },
+    {
+      "article": 4,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "42",
+            "del",
+            "Real",
+            "Decreto",
+            "-",
+            "ley",
+            "21",
+            "/",
+            "2017",
+            ","
+          ],
+          "ins": [
+            "71"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "29"
+          ],
+          "ins": [
+            "la",
+            "Ley"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "diciembre",
+            ","
+          ],
+          "ins": [
+            "los",
+            "Mercados"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "medidas",
+            "urgentes",
+            "para",
+            "la",
+            "adaptación",
+            "del",
+            "derecho",
+            "español",
+            "a",
+            "la",
+            "normativa",
+            "la",
+            "Unión",
+            "Europea",
+            "en",
+            "materia",
+            "del",
+            "mercado"
+          ],
+          "ins": [
+            "Valores",
+            "y"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "valores"
+          ],
+          "ins": [
+            "los",
+            "Servicios",
+            "de",
+            "Inversión"
+          ]
+        }
+      ]
+    },
+    {
+      "article": 5,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "delete",
+          "del": [
+            "1",
+            "."
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "2"
+          ],
+          "ins": [
+            "1"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "3"
+          ],
+          "ins": [
+            "2"
+          ]
+        },
+        {
+          "op": "delete",
+          "del": [
+            ",",
+            "sujeto",
+            "a",
+            "la",
+            "autorización",
+            "de",
+            "la",
+            "Comisión",
+            "Nacional",
+            "del",
+            "Mercado",
+            "de",
+            "Valores"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "Todo",
+            "lo",
+            "anterior",
+            ",",
+            "estará",
+            "sujeto",
+            "a",
+            "la",
+            "autorización",
+            "de",
+            "la",
+            "Comisión",
+            "Nacional",
+            "del",
+            "Mercado",
+            "de",
+            "Valores",
+            ",",
+            "en",
+            "aquellos",
+            "casos",
+            "en",
+            "los",
+            "que",
+            "sea",
+            "necesaria",
+            ",",
+            "de",
+            "conformidad",
+            "con",
+            "lo",
+            "establecido",
+            "en",
+            "la",
+            "Ley",
+            "de",
+            "los",
+            "Mercados",
+            "de",
+            "Valores",
+            "y",
+            "de",
+            "los",
+            "Servicios",
+            "de",
+            "Inversión",
+            ",",
+            "así",
+            "como",
+            "sus",
+            "disposiciones",
+            "de",
+            "desarrollo",
+            "y",
+            "cualquier",
+            "norma",
+            "que",
+            "complemente",
+            "o",
+            "sustituya",
+            "a",
+            "las",
+            "anteriores",
+            "."
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "número",
+            "3",
+            "de",
+            "este",
+            "artículo"
+          ],
+          "ins": [
+            "presente",
+            "apartado"
+          ]
+        }
+      ]
+    },
+    {
+      "article": 6,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "al"
+          ],
+          "ins": [
+            "poder",
+            "operar",
+            "en",
+            "el"
+          ]
+        }
+      ]
+    },
+    {
+      "article": 7,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "del",
+            "Mercado"
+          ],
+          "ins": [
+            "de",
+            "los",
+            "Mercados"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "y",
+            "de",
+            "los",
+            "Servicios",
+            "de",
+            "Inversión"
+          ]
+        },
+        {
+          "op": "delete",
+          "del": [
+            "y"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            ",",
+            "o",
+            "cualquier",
+            "norma",
+            "que",
+            "complemente",
+            "o",
+            "sustituya",
+            "a",
+            "las",
+            "anteriores"
+          ]
+        }
+      ],
+      "global_changes": [
+        "del Mercado -> de los Mercados",
+        " -> y de los Servicios de Inversión"
+      ]
+    },
+    {
+      "article": 10,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "delete",
+          "del": [
+            "apartado",
+            "f",
+            ")",
+            "del"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "69",
+            ".",
+            "2"
+          ],
+          "ins": [
+            "62"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "del",
+            "Mercado"
+          ],
+          "ins": [
+            "de",
+            "los",
+            "Mercados"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "y",
+            "de",
+            "los",
+            "Servicios",
+            "de",
+            "Inversión",
+            ",",
+            "y",
+            "cualquier",
+            "norma",
+            "que",
+            "complemente",
+            "o",
+            "sustituya",
+            "a",
+            "la",
+            "misma",
+            ","
+          ]
+        }
+      ],
+      "global_changes": [
+        "del Mercado -> de los Mercados"
+      ]
+    },
+    {
+      "article": 11,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "delete",
+          "del": [
+            "y",
+            "para",
+            "cumplir",
+            "con",
+            "las",
+            "obligaciones",
+            "relativas",
+            "al",
+            "sistema",
+            "de",
+            "información",
+            "previsto",
+            "en",
+            "el",
+            "artículo",
+            "114",
+            "de",
+            "la",
+            "Ley",
+            "del",
+            "Mercado",
+            "de",
+            "Valores"
+          ]
+        }
+      ]
+    },
+    {
+      "article": 13,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "insert",
+          "ins": [
+            "y",
+            "/",
+            "o",
+            "BME",
+            "Scale"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "u",
+            "otros",
+            "que",
+            "deban",
+            "reunir",
+            "requisitos",
+            "especiales",
+            "según",
+            "la",
+            "normativa",
+            "aplicable",
+            ","
+          ]
+        },
+        {
+          "op": "delete",
+          "del": [
+            "Aportar",
+            "la",
+            "información",
+            "que",
+            "se",
+            "precise",
+            "para",
+            "el",
+            "sistema",
+            "de",
+            "información",
+            "mencionado",
+            "en",
+            "el",
+            "artículo",
+            "114",
+            "de",
+            "la",
+            "Ley",
+            "del",
+            "Mercado",
+            "de",
+            "Valores",
+            ".",
+            "n",
+            ")"
+          ]
+        }
+      ]
+    },
+    {
+      "article": 14,
+      "status": "MODIFIED",
+      "change_class": "formatting",
+      "diff": [
+        {
+          "op": "delete",
+          "del": [
+            "."
+          ]
+        }
+      ]
+    },
+    {
+      "article": 15,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "se",
+            "incorporarán"
+          ],
+          "ins": [
+            "podrán",
+            "incorporarse"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "Scale",
+            "o",
+            "en",
+            "el",
+            "segmento",
+            "BME"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "previsto"
+          ],
+          "ins": [
+            "ambos",
+            "previstos"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            ".",
+            "A",
+            "diferencia",
+            "del",
+            "segmento",
+            "BME",
+            "Scale"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "y",
+            "que"
+          ],
+          "ins": [
+            "el",
+            "segmento",
+            "BME",
+            "Growth"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            ".",
+            "Por"
+          ],
+          "ins": [
+            ",",
+            "por"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "anterior",
+            ","
+          ],
+          "ins": [
+            "cual"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "las"
+          ],
+          "ins": [
+            "dichas"
+          ]
+        },
+        {
+          "op": "delete",
+          "del": [
+            "mencionadas",
+            "en",
+            "el",
+            "párrafo",
+            "anterior"
+          ]
+        }
+      ]
+    },
+    {
+      "article": 16,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "insert",
+          "ins": [
+            "o",
+            "al",
+            "segmento",
+            "BME",
+            "Scale"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "("
+          ],
+          "ins": [
+            "de",
+            "oferta",
+            "de",
+            "valores",
+            ",",
+            "aprobado",
+            "por",
+            "la",
+            "correspondiente",
+            "autoridad",
+            "nacional",
+            "competente",
+            "o",
+            ","
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "caso"
+          ],
+          "ins": [
+            "defecto"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "EU",
+            "Growth",
+            "Prospectus",
+            ")",
+            "registrado",
+            "en",
+            "la",
+            "Comisión",
+            "Nacional",
+            "del",
+            "Mercado",
+            "de",
+            "Valores",
+            "salvo",
+            "en",
+            "los",
+            "casos",
+            "en",
+            "los",
+            "que"
+          ],
+          "ins": [
+            "si"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "se",
+            "realice"
+          ],
+          "ins": [
+            "existiera"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "o",
+            "la",
+            "oferta",
+            "pública",
+            "estuviese",
+            "exenta",
+            "de",
+            "la",
+            "obligación",
+            "de",
+            "publicar",
+            "un",
+            "folleto",
+            ",",
+            "un",
+            "documento",
+            "informativo",
+            "de",
+            "incorporación",
+            "al",
+            "Mercado",
+            "-",
+            "en",
+            "el",
+            "caso",
+            "del",
+            "segmento",
+            "BME",
+            "Growth",
+            "-",
+            "o",
+            "un",
+            "documento",
+            "inicial",
+            "de",
+            "acceso",
+            "al",
+            "Mercado",
+            "-",
+            "en",
+            "el",
+            "caso",
+            "del",
+            "segmento",
+            "BME",
+            "Scale",
+            "-"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "este",
+            "segmento"
+          ],
+          "ins": [
+            "estos",
+            "segmentos"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "o",
+            "al",
+            "segmento",
+            "BME",
+            "Scale",
+            ","
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "social"
+          ],
+          "ins": [
+            "suscrito"
+          ]
+        }
+      ],
+      "global_changes": [
+        "este segmento -> estos segmentos"
+      ]
+    },
+    {
+      "article": 17,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "prevista"
+          ],
+          "ins": [
+            "previstas"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "el",
+            "artículo"
+          ],
+          "ins": [
+            "los",
+            "artículos",
+            "20",
+            "y"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "respectivamente"
+          ]
+        }
+      ]
+    },
+    {
+      "article": 18,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "del",
+            "Mercado"
+          ],
+          "ins": [
+            "de",
+            "los",
+            "Mercados"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "y",
+            "de",
+            "los",
+            "Servicios",
+            "de",
+            "Inversión"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "77"
+          ],
+          "ins": [
+            "63"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "3"
+          ],
+          "ins": [
+            "7"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "del",
+            "Mercado"
+          ],
+          "ins": [
+            "de",
+            "los",
+            "Mercados"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "y",
+            "de",
+            "los",
+            "Servicios",
+            "de",
+            "Inversión"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "77"
+          ],
+          "ins": [
+            "63"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "3"
+          ],
+          "ins": [
+            "7"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "del",
+            "Mercado"
+          ],
+          "ins": [
+            "de",
+            "los",
+            "Mercados"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "y",
+            "de",
+            "los",
+            "Servicios",
+            "de",
+            "Inversión"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "y",
+            "al",
+            "segmento",
+            "BME",
+            "Scale"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            ".",
+            "Adicionalmente"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "así",
+            "como"
+          ],
+          "ins": [
+            "las",
+            "entidades",
+            "emisoras",
+            "que",
+            "se",
+            "incorporen",
+            "al",
+            "segmento",
+            "BME",
+            "Growth",
+            "deberán"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            ","
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "o",
+            "la",
+            "Unión",
+            "Europea"
+          ]
+        }
+      ],
+      "global_changes": [
+        "del Mercado -> de los Mercados",
+        " -> y de los Servicios de Inversión",
+        " -> ,",
+        " -> o la Unión Europea"
+      ]
+    },
+    {
+      "article": 19,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "del",
+            "Mercado"
+          ],
+          "ins": [
+            "de",
+            "los",
+            "Mercados"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "el",
+            "Real",
+            "Decreto",
+            "-",
+            "ley",
+            "21",
+            "/",
+            "2017"
+          ],
+          "ins": [
+            "de",
+            "los",
+            "Servicios",
+            "de",
+            "Inversión"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "sus",
+            "disposiciones"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "29",
+            "de",
+            "diciembre",
+            ",",
+            "de",
+            "medidas",
+            "urgentes",
+            "para",
+            "la",
+            "adaptación",
+            "del",
+            "derecho",
+            "español"
+          ],
+          "ins": [
+            "desarrollo",
+            "y",
+            "cualquier",
+            "norma",
+            "que",
+            "complemente",
+            "o",
+            "sustituya"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "la",
+            "normativa",
+            "la",
+            "Unión",
+            "Europea",
+            "en",
+            "materia",
+            "del",
+            "mercado",
+            "de",
+            "valores"
+          ],
+          "ins": [
+            "las",
+            "anteriores"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "."
+          ],
+          "ins": [
+            ";"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            ";"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "."
+          ],
+          "ins": [
+            ";"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "."
+          ],
+          "ins": [
+            ";"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "al",
+            "Mercado"
+          ],
+          "ins": [
+            "a",
+            "los",
+            "segmentos",
+            "BME",
+            "Growth",
+            "y",
+            "BME",
+            "Scale"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "que",
+            "el"
+          ],
+          "ins": [
+            "del"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "les",
+            "inscriba"
+          ],
+          "ins": [
+            "su",
+            "inscripción"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            ",",
+            "con",
+            "indicación",
+            "del",
+            "/",
+            "los",
+            "segmento",
+            "/",
+            "s",
+            "en",
+            "el",
+            "/",
+            "los",
+            "que",
+            "van",
+            "a",
+            "actuar"
+          ]
+        }
+      ],
+      "global_changes": [
+        "del Mercado -> de los Mercados"
+      ]
+    },
+    {
+      "article": 20,
+      "status": "MODIFIED",
+      "change_class": "terminology",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "del",
+            "Mercado"
+          ],
+          "ins": [
+            "de",
+            "los",
+            "Mercados"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "y",
+            "de",
+            "los",
+            "Servicios",
+            "de",
+            "Inversión"
+          ]
+        }
+      ],
+      "global_changes": [
+        "del Mercado -> de los Mercados",
+        " -> y de los Servicios de Inversión"
+      ]
+    },
+    {
+      "article": 21,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "delete",
+          "del": [
+            "informativos"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "y",
+            "en",
+            "el",
+            "segmento",
+            "BME",
+            "Scale",
+            ","
+          ]
+        },
+        {
+          "op": "delete",
+          "del": [
+            "informativo"
+          ]
+        },
+        {
+          "op": "delete",
+          "del": [
+            "(",
+            "en",
+            "su",
+            "caso"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "EU",
+            "Growth",
+            "Prospectus",
+            ")",
+            ",",
+            "registrado",
+            "en"
+          ],
+          "ins": [
+            "aprobado",
+            "por"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "o",
+            "la",
+            "oferta",
+            "pública",
+            "estuviese",
+            "exenta",
+            "de",
+            "la",
+            "obligación",
+            "de",
+            "publicar",
+            "folleto"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "-",
+            "en",
+            "el",
+            "caso",
+            "del",
+            "segmento",
+            "BME",
+            "Growth",
+            "-",
+            "y",
+            "un",
+            "documento",
+            "inicial",
+            "de",
+            "acceso",
+            "al",
+            "Mercado",
+            "-",
+            "en",
+            "el",
+            "caso",
+            "del",
+            "segmento",
+            "BME",
+            "Scale",
+            "-"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "En",
+            "el"
+          ],
+          "ins": [
+            "El"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "al",
+            "Mercado",
+            "o",
+            "documento",
+            "inicial",
+            "de",
+            "acceso"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "del",
+            "Mercado"
+          ],
+          "ins": [
+            "de",
+            "los",
+            "Mercados"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "y",
+            "de",
+            "los",
+            "Servicios",
+            "de",
+            "Inversión"
+          ]
+        },
+        {
+          "op": "delete",
+          "del": [
+            "7",
+            "."
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "8"
+          ],
+          "ins": [
+            "7"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "9"
+          ],
+          "ins": [
+            "8"
+          ]
+        }
+      ],
+      "global_changes": [
+        "del Mercado -> de los Mercados",
+        " -> y de los Servicios de Inversión"
+      ]
+    },
+    {
+      "article": 22,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "delete",
+          "del": [
+            "y",
+            "en",
+            "cumplimento",
+            "en",
+            "lo",
+            "dispuesto",
+            "en",
+            "el",
+            "artículo",
+            "22",
+            "del",
+            "Real",
+            "Decreto",
+            "-",
+            "ley",
+            "21",
+            "/",
+            "2017",
+            ",",
+            "de",
+            "29",
+            "de",
+            "diciembre",
+            ",",
+            "de",
+            "medidas",
+            "urgentes",
+            "para",
+            "la",
+            "adaptación",
+            "del",
+            "derecho",
+            "español",
+            "a",
+            "la",
+            "normativa",
+            "la",
+            "Unión",
+            "Europea",
+            "en",
+            "materia",
+            "del",
+            "mercado",
+            "de",
+            "valores",
+            ","
+          ]
+        }
+      ]
+    },
+    {
+      "article": 24,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "la",
+            "condición",
+            "exigida"
+          ],
+          "ins": [
+            "los",
+            "requisitos",
+            "exigidos"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "entidad",
+            "en",
+            "el",
+            "artículo",
+            "15",
+            "de",
+            "este",
+            "Reglamento"
+          ],
+          "ins": [
+            "misma"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "o",
+            "un",
+            "sistema",
+            "multilateral",
+            "de",
+            "negociación"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "excluirá"
+          ],
+          "ins": [
+            "podrá",
+            "excluir"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "o",
+            "sistemas",
+            "multilaterales",
+            "de",
+            "negociación"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            ".",
+            "g",
+            ")",
+            "Cuando",
+            "se",
+            "produzcan",
+            "o",
+            "hayan",
+            "producido",
+            "hechos",
+            "o",
+            "acontecimientos",
+            "con",
+            "respecto",
+            "a",
+            "una",
+            "entidad",
+            "emisora",
+            "que",
+            ",",
+            "a",
+            "juicio",
+            "del",
+            "Consejo",
+            "de",
+            "Adminisitración",
+            "del",
+            "Mercado",
+            ",",
+            "perjudiquen",
+            "la",
+            "imagen",
+            "y",
+            "reputación",
+            "del",
+            "Mercado",
+            ".",
+            "h",
+            ")",
+            "Falta",
+            "de",
+            "abono",
+            "de",
+            "las",
+            "tarifas",
+            "del",
+            "Mercado",
+            "por",
+            "parte",
+            "de",
+            "la",
+            "entidad",
+            "emisora"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            ",",
+            "d",
+            ")",
+            ",",
+            "g",
+            ")"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "d"
+          ],
+          "ins": [
+            "h"
+          ]
+        }
+      ]
+    },
+    {
+      "article": 25,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "insert",
+          "ins": [
+            ",",
+            "u",
+            "otros",
+            "que",
+            "deban",
+            "reunir",
+            "requisitos",
+            "especiales",
+            "según",
+            "la",
+            "normativa",
+            "aplicable"
+          ]
+        }
+      ]
+    },
+    {
+      "article": 26,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "insert",
+          "ins": [
+            "Scale",
+            ",",
+            "destinado",
+            "a",
+            "la",
+            "negociación",
+            "de",
+            "los",
+            "valores",
+            "indicados",
+            "en",
+            "el",
+            "artículo",
+            "15",
+            ".",
+            "1",
+            "de",
+            "este",
+            "Reglamento",
+            "y",
+            "cuyos",
+            "valores",
+            "habrán",
+            "de",
+            "cumplir",
+            "los",
+            "requisitos",
+            "de",
+            "incorporación",
+            "y",
+            "mantenimiento",
+            "que",
+            "establezcan",
+            "sus",
+            "normas",
+            "reguladoras",
+            ".",
+            "−",
+            "BME"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            ",",
+            "que",
+            "se",
+            "configura",
+            "como",
+            "un",
+            "Mercado",
+            "de",
+            "PYME",
+            "en",
+            "Expansión",
+            "y",
+            "cuyos",
+            "valores",
+            "habrán",
+            "de",
+            "cumplir",
+            "los",
+            "requisitos",
+            "de",
+            "incorporación",
+            "y",
+            "mantenimiento",
+            "que",
+            "establezcan",
+            "sus",
+            "normas",
+            "reguladoras"
+          ]
+        }
+      ]
+    },
+    {
+      "article": 29,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "delete",
+          "del": [
+            ",",
+            "en",
+            "todo",
+            "caso",
+            ","
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "o",
+            "la",
+            "Unión",
+            "Europea"
+          ]
+        }
+      ],
+      "global_changes": [
+        " -> o la Unión Europea"
+      ]
+    },
+    {
+      "article": 31,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "delete",
+          "del": [
+            ",",
+            "así",
+            "como",
+            "para",
+            "que",
+            "puedan",
+            "cumplir",
+            "con",
+            "sus",
+            "obligaciones",
+            "respecto",
+            "al",
+            "sistema",
+            "de",
+            "información",
+            "previsto",
+            "en",
+            "el",
+            "artículo",
+            "114",
+            "de",
+            "la",
+            "Ley",
+            "del",
+            "Mercado",
+            "de",
+            "Valores"
+          ]
+        }
+      ]
+    },
+    {
+      "article": 32,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "de",
+            "la",
+            "Bolsa"
+          ],
+          "ins": [
+            "del",
+            "Mercado"
+          ]
+        }
+      ]
+    },
+    {
+      "article": 35,
+      "status": "MODIFIED",
+      "change_class": "terminology",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "del",
+            "Mercado"
+          ],
+          "ins": [
+            "de",
+            "los",
+            "Mercados"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "y",
+            "de",
+            "los",
+            "Servicios",
+            "de",
+            "Inversión"
+          ]
+        }
+      ],
+      "global_changes": [
+        "del Mercado -> de los Mercados",
+        " -> y de los Servicios de Inversión"
+      ]
+    },
+    {
+      "article": 36,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "insert",
+          "ins": [
+            ",",
+            "S",
+            ".",
+            "A",
+            ".",
+            "U",
+            ".",
+            "(",
+            "Iberclear",
+            ")"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "S",
+            ".",
+            "A",
+            ".",
+            "U",
+            ".",
+            "(",
+            "Iberclear",
+            ")",
+            ","
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "."
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "del",
+            "Mercado"
+          ],
+          "ins": [
+            "de",
+            "los",
+            "Mercados"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "y",
+            "de",
+            "los",
+            "Servicios",
+            "de",
+            "Inversión"
+          ]
+        }
+      ],
+      "global_changes": [
+        "del Mercado -> de los Mercados",
+        " -> y de los Servicios de Inversión"
+      ]
+    },
+    {
+      "article": 37,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "del",
+            "Mercado"
+          ],
+          "ins": [
+            "de",
+            "los",
+            "Mercados"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            "y",
+            "de",
+            "los",
+            "Servicios",
+            "de",
+            "Inversión"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            ",",
+            "así",
+            "como",
+            "en",
+            "cualquier",
+            "norma",
+            "que",
+            "complemente",
+            "o",
+            "sustituya",
+            "a",
+            "las",
+            "anteriores"
+          ]
+        }
+      ],
+      "global_changes": [
+        "del Mercado -> de los Mercados",
+        " -> y de los Servicios de Inversión"
+      ]
+    },
+    {
+      "article": 40,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "delete",
+          "del": [
+            "así",
+            "como",
+            "las",
+            "comunicaciones",
+            "previstas",
+            "en",
+            "el",
+            "artículo",
+            "39",
+            ".",
+            "2",
+            "del",
+            "Real",
+            "Decreto",
+            "-",
+            "ley",
+            "21",
+            "/",
+            "2017",
+            ",",
+            "de",
+            "29",
+            "de",
+            "diciembre",
+            ",",
+            "de",
+            "medidas",
+            "urgentes",
+            "para",
+            "la",
+            "adaptación",
+            "del",
+            "derecho",
+            "español",
+            "a",
+            "la",
+            "normativa",
+            "la",
+            "Unión",
+            "Europea",
+            "en",
+            "materia",
+            "del",
+            "mercado",
+            "de",
+            "valores"
+          ]
+        }
+      ]
+    },
+    {
+      "article": "FINAL",
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "1"
+          ],
+          "ins": [
+            "día",
+            "siguiente",
+            "al"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "octubre",
+            "de",
+            "2020"
+          ],
+          "ins": [
+            "su",
+            "publicación",
+            "en",
+            "el",
+            "Boletín",
+            "del",
+            "Mercado"
+          ]
+        }
+      ]
+    }
+  ]
+}

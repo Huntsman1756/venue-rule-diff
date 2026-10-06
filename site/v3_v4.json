@@ -1,0 +1,230 @@
+{
+  "rulebook": "bme_mtf_equity",
+  "from_version": "3",
+  "to_version": "4",
+  "source_hashes": {
+    "from": "a0041368fcdb689269060eac841ccdc727bd7a8b17d43c9e43c31b410931b21b",
+    "to": "6b02438429c577b7856cfcc581dfb4366a0a2c20ec6b1eadcc3004da22f4f937"
+  },
+  "changed_articles": [
+    1,
+    13,
+    15,
+    16,
+    18,
+    19,
+    21,
+    26
+  ],
+  "final_provision_changed": false,
+  "global_change_events": [
+    {
+      "del": [
+        "Scale"
+      ],
+      "ins": [
+        "Scaleup"
+      ],
+      "articles": [
+        1,
+        13,
+        15,
+        16,
+        18,
+        19,
+        21,
+        26
+      ]
+    }
+  ],
+  "changes": [
+    {
+      "article": 1,
+      "status": "MODIFIED",
+      "change_class": "terminology",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "Scale"
+          ],
+          "ins": [
+            "Scaleup"
+          ]
+        }
+      ],
+      "global_changes": [
+        "Scale -> Scaleup"
+      ]
+    },
+    {
+      "article": 13,
+      "status": "MODIFIED",
+      "change_class": "terminology",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "Scale"
+          ],
+          "ins": [
+            "Scaleup"
+          ]
+        }
+      ],
+      "global_changes": [
+        "Scale -> Scaleup"
+      ]
+    },
+    {
+      "article": 15,
+      "status": "MODIFIED",
+      "change_class": "terminology",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "Scale"
+          ],
+          "ins": [
+            "Scaleup"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "Scale"
+          ],
+          "ins": [
+            "Scaleup"
+          ]
+        }
+      ],
+      "global_changes": [
+        "Scale -> Scaleup"
+      ]
+    },
+    {
+      "article": 16,
+      "status": "MODIFIED",
+      "change_class": "terminology",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "Scale"
+          ],
+          "ins": [
+            "Scaleup"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "Scale"
+          ],
+          "ins": [
+            "Scaleup"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "Scale"
+          ],
+          "ins": [
+            "Scaleup"
+          ]
+        }
+      ],
+      "global_changes": [
+        "Scale -> Scaleup"
+      ]
+    },
+    {
+      "article": 18,
+      "status": "MODIFIED",
+      "change_class": "terminology",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "Scale"
+          ],
+          "ins": [
+            "Scaleup"
+          ]
+        }
+      ],
+      "global_changes": [
+        "Scale -> Scaleup"
+      ]
+    },
+    {
+      "article": 19,
+      "status": "MODIFIED",
+      "change_class": "terminology",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "Scale"
+          ],
+          "ins": [
+            "Scaleup"
+          ]
+        }
+      ],
+      "global_changes": [
+        "Scale -> Scaleup"
+      ]
+    },
+    {
+      "article": 21,
+      "status": "MODIFIED",
+      "change_class": "terminology",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "Scale"
+          ],
+          "ins": [
+            "Scaleup"
+          ]
+        },
+        {
+          "op": "replace",
+          "del": [
+            "Scale"
+          ],
+          "ins": [
+            "Scaleup"
+          ]
+        }
+      ],
+      "global_changes": [
+        "Scale -> Scaleup"
+      ]
+    },
+    {
+      "article": 26,
+      "status": "MODIFIED",
+      "change_class": "terminology",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "Scale"
+          ],
+          "ins": [
+            "Scaleup"
+          ]
+        }
+      ],
+      "global_changes": [
+        "Scale -> Scaleup"
+      ]
+    }
+  ]
+}

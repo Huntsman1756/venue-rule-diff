@@ -1,0 +1,86 @@
+{
+  "rulebook": "bme_mtf_equity",
+  "from_version": "1",
+  "to_version": "2",
+  "source_hashes": {
+    "from": "20d31145751475eb24c7bea19a43f833477b884f09819cc7a493452cf77ac05f",
+    "to": "a24b65c467cc3f96c3e248e82e2633aab4751eff5c25f2e37b1f26143200061c"
+  },
+  "changed_articles": [
+    16,
+    18
+  ],
+  "final_provision_changed": false,
+  "global_change_events": [],
+  "changes": [
+    {
+      "article": 16,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "inferior",
+            "a",
+            "quinientos"
+          ],
+          "ins": [
+            "que",
+            "no",
+            "supere",
+            "los",
+            "mil"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            ",",
+            "o",
+            "cualquier",
+            "otro",
+            "límite",
+            "que",
+            "establezca",
+            "la",
+            "normativa",
+            "aplicable"
+          ]
+        }
+      ]
+    },
+    {
+      "article": 18,
+      "status": "MODIFIED",
+      "change_class": "substantive",
+      "diff": [
+        {
+          "op": "replace",
+          "del": [
+            "quinientos"
+          ],
+          "ins": [
+            "mil"
+          ]
+        },
+        {
+          "op": "insert",
+          "ins": [
+            ",",
+            "o",
+            "cualquier",
+            "otro",
+            "límite",
+            "que",
+            "establezca",
+            "la",
+            "normativa",
+            "aplicable",
+            ","
+          ]
+        }
+      ]
+    }
+  ]
+}

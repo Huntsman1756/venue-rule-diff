@@ -1,0 +1,71 @@
+{
+  "rulebook": "bme_mtf_equity",
+  "title": "BME MTF Equity - Reglamento de funcionamiento",
+  "discovery_note": "All four versions are served by the live official BME document service. They were located through the venue's own public API (apiweb.bolsasymercados.es/Market/v1/EQ/MtfEquity/Documents, titleSearch 'Reglamento de funcionamiento'), which resolves to /MTF_Equity/docs/documentos/Avisos/<year>/<month>/ files.",
+  "versions": [
+    {
+      "version": "1",
+      "approval_date": "2020-07-30",
+      "publication_date": "2020-09-02",
+      "effective_date": "2020-10-01",
+      "effective_date_evidence": {
+        "document": "Instruccion Operativa 18/2020",
+        "source_url": "https://www.bolsasymercados.es/MTF_Equity/docs/normativa/esp/instrucc/2020/20201001_IO_18_2020_Vigencia_y_referencias_normativas.pdf",
+        "sha256": "0ab0fb3de14e8e8d4bb52d635d92a6ba324b92566e26ed07c329ea4d7e528305",
+        "retrieved_at": "2026-10-06T20:11:20.822701+00:00"
+      },
+      "source_url": "https://www.bolsasymercados.es/MTF_Equity/docs/documentos/Avisos/2020/09/MAB_Aviso_20200903_7.pdf",
+      "retrieved_from": "https://www.bolsasymercados.es/MTF_Equity/docs/documentos/Avisos/2020/09/MAB_Aviso_20200903_7.pdf",
+      "document_type": "rulebook_published_as_market_notice",
+      "retrieved_at": "2026-10-06T20:21:26.825440+00:00",
+      "sha256": "20d31145751475eb24c7bea19a43f833477b884f09819cc7a493452cf77ac05f",
+      "verification_status": "VERIFIED",
+      "verification_note": "Self-identifies 'Aprobado el 30 de julio de 2020' on the cover. NOTE: the spec-listed URL (circulares/2020/Reglamento_BME_MTF_Equity.pdf) now serves the CURRENT consolidated rulebook (v4 content, sha256 f28c691b...), not version 1; the sole Wayback capture of it (2020-10-28) is truncated at 1048576 bytes. Canonical v1 is the venue's own Aviso file listed by the BME documents API dated 2020-09-03.",
+      "local_file": "data/raw/bme_mtf_equity_v1.pdf"
+    },
+    {
+      "version": "2",
+      "approval_date": "2022-07-22",
+      "publication_date": null,
+      "effective_date": null,
+      "source_url": "https://www.bolsasymercados.es/MTF_Equity/docs/documentos/Avisos/2022/07/MTF_Equity_Aviso_20220722_1.pdf",
+      "retrieved_from": "https://www.bolsasymercados.es/MTF_Equity/docs/documentos/Avisos/2022/07/MTF_Equity_Aviso_20220722_1.pdf",
+      "document_type": "rulebook_published_as_market_notice",
+      "retrieved_at": "2026-10-06T20:21:27.037438+00:00",
+      "sha256": "a24b65c467cc3f96c3e248e82e2633aab4751eff5c25f2e37b1f26143200061c",
+      "verification_status": "VERIFIED",
+      "verification_note": "Version-control table lists only versions 1 and 2 and declares the modification of articles 16 and 18 on 22/07/2022. Independently corroborated by the CNMV registry copy (ReglamentosSMN, sha256 d82192f6...), whose text content is equivalent. The spec-listed circulares/2022 URL now returns an HTML landing page; both Wayback captures are truncated at 1048576 bytes.",
+      "declared_changes": [16, 18],
+      "local_file": "data/raw/bme_mtf_equity_v2.pdf"
+    },
+    {
+      "version": "3",
+      "approval_date": "2023-07-04",
+      "publication_date": null,
+      "effective_date": null,
+      "source_url": "https://www.bolsasymercados.es/MTF_Equity/docs/documentos/Avisos/2023/07/MTF_Equity_Aviso_20230707.pdf",
+      "retrieved_from": "https://www.bolsasymercados.es/MTF_Equity/docs/documentos/Avisos/2023/07/MTF_Equity_Aviso_20230707.pdf",
+      "document_type": "rulebook_published_as_market_notice",
+      "retrieved_at": "2026-10-06T20:11:20.959385+00:00",
+      "sha256": "a0041368fcdb689269060eac841ccdc727bd7a8b17d43c9e43c31b410931b21b",
+      "verification_status": "VERIFIED",
+      "declared_changes": [1, 4, 5, 6, 7, 10, 11, 13, 15, 16, 17, 18, 19, 20, 21, 22, 24, 25, 26, 29, 31, 32, 35, 36, 37, 40],
+      "local_file": "data/raw/bme_mtf_equity_v3.pdf"
+    },
+    {
+      "version": "4",
+      "approval_date": "2023-09-26",
+      "publication_date": null,
+      "effective_date": null,
+      "source_url": "https://www.bolsasymercados.es/MTF_Equity/docs/documentos/Avisos/2023/10/MTF_Equity_Aviso_20231003.pdf",
+      "retrieved_from": "https://www.bolsasymercados.es/MTF_Equity/docs/documentos/Avisos/2023/10/MTF_Equity_Aviso_20231003.pdf",
+      "document_type": "rulebook_published_as_market_notice",
+      "retrieved_at": "2026-10-06T20:21:27.229153+00:00",
+      "sha256": "6b02438429c577b7856cfcc581dfb4366a0a2c20ec6b1eadcc3004da22f4f937",
+      "verification_status": "VERIFIED",
+      "verification_note": "Self-identifies version 4 dated 26/09/2023 ('BME Scale' -> 'BME Scaleup'). Byte-identical to the Wayback Machine capture (2024-03-10) of the spec-listed bmegrowth.es URL. NOTE: the spec-listed URL now HTTP-redirects to an unrelated document (Circular 3/2023, sha256 6b35a164...) due to a venue redirect misconfiguration. Corroborated by the official English rulebook at bolsasymercados.es/dam/descargas/regulacion/mtf-equity/reglamento/2023/bme-mtf-equity-rule-book-bme-scaleup-en.pdf.",
+      "declared_change_note": "BME Scale -> BME Scaleup",
+      "local_file": "data/raw/bme_mtf_equity_v4.pdf"
+    }
+  ]
+}
