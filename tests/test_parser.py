@@ -1,24 +1,19 @@
 """G2 — parser robustness against the documented extraction artefacts."""
 
 import os
-import sys
 
 import pymupdf
 import pytest
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
-
-from src.extract import (
+from venue_rule_diff.extract import (
     PageLine, article_number_of, clean_lines, extract, segment_pdf,
     _text_anchors, _merge_markers,
 )
 
 FIXTURES = os.path.join(os.path.dirname(__file__), "fixtures")
 
-
 def fx(name):
     return open(os.path.join(FIXTURES, name), encoding="utf-8").read()
-
 
 # --- grammar ---------------------------------------------------------------
 
@@ -35,7 +30,6 @@ def fx(name):
 def test_heading_variants(line, num):
     assert article_number_of(line) == num
 
-
 @pytest.mark.parametrize("line", [
     "de acuerdo con el artículo 26 de este Reglamento",   # body reference
     "artículo 26 de este Reglamento",                     # line-start ref (lowercase)
@@ -46,7 +40,6 @@ def test_heading_variants(line, num):
 def test_heading_rejects_body_references(line):
     assert article_number_of(line) is None
 
-
 def test_pairwise_split_heading():
     """'Artícu\\nlo 42.' must anchor as article 42."""
     lines = [PageLine(0, 100, 114, 71, "Artícu"),
@@ -54,7 +47,6 @@ def test_pairwise_split_heading():
     anchors = _text_anchors(lines)
     assert len(anchors) == 1
     assert anchors[0].number == 42
-
 
 # --- cleanup ---------------------------------------------------------------
 
@@ -77,7 +69,6 @@ def test_footer_and_pagenumber_cleanup():
     assert "Podrán ser Miembros las entidades." in texts
     assert len(kept) == 3
 
-
 def test_list_marker_merge():
     lines = [PageLine(0, 100, 114, 100, "a)"),
              PageLine(0, 100, 114, 128, "La Comisión deberá atender."),
@@ -86,7 +77,6 @@ def test_list_marker_merge():
     merged = _merge_markers(lines)
     texts = [l.text for l in merged]
     assert texts == ["a) La Comisión deberá atender.", "b) El plazo máximo."]
-
 
 # --- synthetic end-to-end segmentation -------------------------------------
 
@@ -118,7 +108,6 @@ def _synth_pdf(articles_toc, body_blocks, tmp_path):
     doc.close()
     return path
 
-
 def test_synth_segmentation(tmp_path):
     """A synthetic mini-rulebook with artefacts must segment cleanly."""
     arts = [1, 2, 3, 4, 5]
@@ -143,7 +132,6 @@ def test_synth_segmentation(tmp_path):
     assert "Reglamento de funcionamiento" not in ex.articles[3].text
     assert ex.articles[4].text.startswith("Texto cuatro")
     assert "vigor" in ex.final.text
-
 
 def test_fixture_files_parse():
     for name in os.listdir(FIXTURES):

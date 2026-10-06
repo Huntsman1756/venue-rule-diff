@@ -39,7 +39,7 @@ import re
 import subprocess
 import tempfile
 import unicodedata
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 import pymupdf
 

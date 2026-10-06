@@ -1,4 +1,13 @@
+# official source documents — never committed (see docs/provenance.md)
 data/raw/
+
+# python
 __pycache__/
 *.pyc
+*.egg-info/
 .venv/
+build/
+dist/
+
+# test caches
+.pytest_cache/

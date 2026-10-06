@@ -1,2 +1,0 @@
-pymupdf>=1.28
-pytest>=9

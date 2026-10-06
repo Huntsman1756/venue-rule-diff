@@ -1,10 +1,13 @@
 """Command line interface.
 
-    python -m src.cli validate <version>     G1 structural gate on one version
-    python -m src.cli compare <from> <to>    article diff (JSON to stdout)
-    python -m src.cli report <from> <to>     human-readable report
-    python -m src.cli site                   generate site/index.html for all
-                                             successive version pairs
+    venue-rule-diff fetch [version]        retrieve official sources
+    venue-rule-diff validate <version>     G1 structural gate on one version
+    venue-rule-diff compare <from> <to>    article diff (JSON to stdout)
+    venue-rule-diff report <from> <to>     human-readable report
+    venue-rule-diff site                   generate site/ for successive pairs
+    venue-rule-diff toolchain              declared vs actual toolchain
+
+Equivalent: ``python -m venue_rule_diff.cli <command>``.
 """
 
 from __future__ import annotations
@@ -79,6 +82,19 @@ def cmd_report(args):
     return 0
 
 
+def cmd_fetch(args):
+    from .download import MANIFEST, fetch, load_manifest
+    m = load_manifest()
+    targets = [args.version] if args.version else \
+        [v["version"] for v in m["versions"]]
+    for v in targets:
+        entry = fetch(v, MANIFEST)
+        r = entry["retrieval"]
+        print(f"v{v}: {r['byte_size']} bytes  sha256 {r['sha256'][:16]}…"
+              f"  -> {entry['local_file']}")
+    return 0
+
+
 def cmd_toolchain(args):
     from .extract import toolchain_info
     print(json.dumps(toolchain_info(), indent=2, ensure_ascii=False))
@@ -98,13 +114,16 @@ def cmd_site(args):
 def main(argv=None):
     p = argparse.ArgumentParser(prog="venue-rule-diff")
     sub = p.add_subparsers(dest="cmd", required=True)
-    for name in ("validate", "compare", "report", "site", "toolchain"):
+    for name in ("fetch", "validate", "compare", "report", "site",
+                 "toolchain"):
         sp = sub.add_parser(name)
         if name in ("compare", "report"):
             sp.add_argument("from_version")
             sp.add_argument("to_version")
         if name == "validate":
             sp.add_argument("version")
+        if name == "fetch":
+            sp.add_argument("version", nargs="?", default=None)
         sp.add_argument("--no-ocr", action="store_true",
                         help="disable OCR fallback for image-rendered headings")
         sp.set_defaults(func=globals()[f"cmd_{name}"])

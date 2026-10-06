@@ -4,16 +4,13 @@ Requires the official PDFs in data/raw/ (gitignored).  Skipped when absent.
 """
 
 import os
-import sys
 
 import pytest
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
-
-from src.diff import diff_extractions
-from src.extract import extract
-from src.validate import validate_extraction
-from src.normalize import normalize_text
+from venue_rule_diff.diff import diff_extractions
+from venue_rule_diff.extract import extract
+from venue_rule_diff.validate import validate_extraction
+from venue_rule_diff.normalize import normalize_text
 
 RAW = os.path.join(os.path.dirname(__file__), "..", "data", "raw")
 VERSIONS = ["v1", "v2", "v3", "v4"]
@@ -23,12 +20,10 @@ pytestmark = pytest.mark.skipif(
             for v in VERSIONS),
     reason="official source PDFs not present in data/raw")
 
-
 @pytest.fixture(scope="module")
 def extractions():
     return {v: extract(os.path.join(RAW, f"bme_mtf_equity_{v}.pdf"))
             for v in VERSIONS}
-
 
 # --- G1: structural extraction ----------------------------------------------
 
@@ -39,13 +34,11 @@ def test_g1_structure(extractions, v):
     assert res["articles_extracted"] == 47
     assert res["final_provision"]
 
-
 # --- G3: v1 -> v2 oracle -----------------------------------------------------
 
 def test_g3_v1_v2(extractions):
     res = diff_extractions(extractions["v1"], extractions["v2"], {})
     assert res["changed_articles"] == [16, 18]
-
 
 # --- G4: v2 -> v3 oracle -----------------------------------------------------
 #
@@ -73,13 +66,11 @@ VERIFIED_UNDECLARED = {
     }
 }
 
-
 def test_g4a_declared_recall(extractions):
     """G4a: every article the venue declared changed must be detected."""
     res = diff_extractions(extractions["v2"], extractions["v3"], {})
     detected = set(res["changed_articles"])
     assert EXPECTED_V2_V3 <= detected
-
 
 def test_g4b_undeclared_control(extractions):
     """G4b: extras must be exactly the verified exceptions; none unexplained."""
@@ -99,7 +90,6 @@ def test_g4b_undeclared_control(extractions):
     declared_unchanged = set(range(1, 48)) - EXPECTED_V2_V3 - extras
     assert unchanged == declared_unchanged
 
-
 # --- G5: v3 -> v4 transversal terminology change -----------------------------
 
 def test_g5_v3_v4_terminology(extractions):
@@ -115,7 +105,6 @@ def test_g5_v3_v4_terminology(extractions):
     for c in res["changes"]:
         assert c["change_class"] == "terminology"
         assert c["diff"], "raw diff must be preserved alongside classification"
-
 
 # --- G6: determinism under the declared toolchain -----------------------------
 
