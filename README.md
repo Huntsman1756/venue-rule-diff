@@ -33,6 +33,10 @@ venue-rule-diff toolchain        # declared vs actual extraction toolchain
 pytest                           # unit tests + validation gates
 ```
 
+> CI validates the offline test suite. Real-corpus gates require the
+> official PDFs retrieved with `venue-rule-diff fetch` and are therefore
+> not executed in GitHub-hosted CI (`live-source` runs them on demand).
+
 ## Highlights
 
 * **Provenance first.** A URL does not immutably identify a document — 3 of
