@@ -30,4 +30,4 @@ Initial release. BME MTF Equity only (articles 1–47 + Final Provision).
 - Article 14 carries a real punctuation correction in the v2→v3 source
   bytes that the venue's change log does not declare.
 
-[0.1.0]: https://github.com/USER/venue-rule-diff/releases/tag/v0.1.0
+[0.1.0]: https://github.com/Huntsman1756/venue-rule-diff/releases/tag/v0.1.0
