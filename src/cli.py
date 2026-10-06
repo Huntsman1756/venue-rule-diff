@@ -79,6 +79,12 @@ def cmd_report(args):
     return 0
 
 
+def cmd_toolchain(args):
+    from .extract import toolchain_info
+    print(json.dumps(toolchain_info(), indent=2, ensure_ascii=False))
+    return 0
+
+
 def cmd_site(args):
     from .sitegen import build_site
     m = load_manifest()
@@ -92,7 +98,7 @@ def cmd_site(args):
 def main(argv=None):
     p = argparse.ArgumentParser(prog="venue-rule-diff")
     sub = p.add_subparsers(dest="cmd", required=True)
-    for name in ("validate", "compare", "report", "site"):
+    for name in ("validate", "compare", "report", "site", "toolchain"):
         sp = sub.add_parser(name)
         if name in ("compare", "report"):
             sp.add_argument("from_version")

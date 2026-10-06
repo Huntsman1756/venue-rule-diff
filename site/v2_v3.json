@@ -48,7 +48,16 @@
         "Mercados"
       ],
       "articles": [
-        "FINAL"
+        1,
+        7,
+        10,
+        18,
+        19,
+        20,
+        21,
+        35,
+        36,
+        37
       ]
     },
     {
@@ -62,16 +71,14 @@
         "Inversión"
       ],
       "articles": [
-        "FINAL"
-      ]
-    },
-    {
-      "del": [],
-      "ins": [
-        ","
-      ],
-      "articles": [
-        "FINAL"
+        1,
+        7,
+        18,
+        20,
+        21,
+        35,
+        36,
+        37
       ]
     },
     {
@@ -84,7 +91,8 @@
         "segmentos"
       ],
       "articles": [
-        "FINAL"
+        1,
+        16
       ]
     },
     {
@@ -96,7 +104,8 @@
         "Europea"
       ],
       "articles": [
-        "FINAL"
+        18,
+        29
       ]
     }
   ],
@@ -353,7 +362,6 @@
       "global_changes": [
         "del Mercado -> de los Mercados",
         " -> y de los Servicios de Inversión",
-        " -> ,",
         "este segmento -> estos segmentos"
       ]
     },
@@ -1305,7 +1313,6 @@
       "global_changes": [
         "del Mercado -> de los Mercados",
         " -> y de los Servicios de Inversión",
-        " -> ,",
         " -> o la Unión Europea"
       ]
     },

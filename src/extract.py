@@ -26,6 +26,11 @@ Design decisions:
   therefore not appear as an article change.
 * OCR is used only where the text layer lacks headings (v2).  Its output is
   used for anchor labels only, never for article body text.
+
+Determinism (gate G6) means byte-identical output under the *declared*
+extraction toolchain — see ``TOOLCHAIN`` and
+``manifests/bme_mtf_equity.json#extraction_toolchain`` — not universal
+determinism across OCR/renderer versions.
 """
 
 from __future__ import annotations
@@ -41,6 +46,36 @@ import pymupdf
 TEXT_FLAGS = pymupdf.TEXTFLAGS_DICT | pymupdf.TEXT_CID_FOR_UNKNOWN_UNICODE
 
 TESSERACT_CMD = "tesseract"
+OCR_DPI = 300
+OCR_PSM = "6"
+OCR_LANG = "eng"
+
+# Declared extraction toolchain (mirrors manifests/bme_mtf_equity.json).
+TOOLCHAIN = {
+    "pdf_renderer": "PyMuPDF",
+    "pdf_renderer_version": "1.28.2",
+    "ocr_engine": "tesseract",
+    "ocr_engine_version": "5.4.0.20240606",
+    "ocr_language_data": OCR_LANG,
+    "ocr_render_dpi": OCR_DPI,
+    "ocr_args": ["--psm", OCR_PSM],
+}
+
+
+def toolchain_info() -> dict:
+    """Report the toolchain actually present vs. the declared one."""
+    import shutil
+    actual = {"pymupdf": pymupdf.__version__, "tesseract": None,
+              "tesseract_path": shutil.which(TESSERACT_CMD)}
+    if actual["tesseract_path"]:
+        try:
+            r = subprocess.run([TESSERACT_CMD, "--version"],
+                               capture_output=True, text=True, timeout=15)
+            actual["tesseract"] = r.stdout.splitlines()[0].strip() \
+                if r.stdout else None
+        except Exception:
+            pass
+    return {"declared": TOOLCHAIN, "actual": actual}
 
 EXPECTED_ARTICLES = list(range(1, 48))
 
@@ -276,13 +311,14 @@ def _image_rows(pdf: pymupdf.Document, page_index: int) -> list[tuple[float, flo
 def _ocr_strip(pdf: pymupdf.Document, page_index: int,
                y0: float, y1: float) -> str:
     pix = pdf[page_index].get_pixmap(
-        clip=pymupdf.Rect(55, y0 - 6, 590, y1 + 6), dpi=300)
+        clip=pymupdf.Rect(55, y0 - 6, 590, y1 + 6), dpi=OCR_DPI)
     with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as f:
         path = f.name
     try:
         pix.save(path)
-        r = subprocess.run([TESSERACT_CMD, path, "-", "--psm", "6"],
-                           capture_output=True, text=True, timeout=60)
+        r = subprocess.run(
+            [TESSERACT_CMD, path, "-", "--psm", OCR_PSM, "-l", OCR_LANG],
+            capture_output=True, text=True, timeout=60)
         return " ".join(r.stdout.split())
     finally:
         import os
